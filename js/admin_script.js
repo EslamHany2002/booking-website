@@ -15,3 +15,8 @@ document.querySelector('#user-btn').onclick = () =>{
     navbar.classList.remove('active');
     accountBox.classList.remove('active');
  }
+
+ document.querySelector('close-update').onclick = () =>{
+   document.querySelector('.edit-product-form').style.display = 'none';
+   window.location.href = 'admin_products.php';
+ }
