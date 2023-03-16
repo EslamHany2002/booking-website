@@ -48,14 +48,32 @@ if(isset($_GET['delete'])){
          while($fetch_message = mysqli_fetch_assoc($select_message)){
       
    ?>
-   <div class="box">
+   <main class="l-card">
+   <section class="l-card__user">
+		<div class="l-card__userImage">
+			
+		</div>
+		<div class="l-card__userInfo">
+			<span><?php echo $fetch_message['name']; ?></span></span>
+			<span><?php echo $fetch_message['email']; ?></span>
+         <span><?php echo $fetch_message['number']; ?></span>
+		</div>
+	</section>
+	<section class="l-card__text">
+		<p>
+      <?php echo $fetch_message['message']; ?>
+		</p>
+	</section>
+	<a href="admin_contacts.php?delete=<?php echo $fetch_message['id']; ?>" onclick="return confirm('delete this message?');" class="delete-btn">delete message</a>
+   </main>
+   <!-- <div class="box">
       <p> user id : <span><?php echo $fetch_message['user_id']; ?></span> </p>
       <p> name : <span><?php echo $fetch_message['name']; ?></span> </p>
       <p> number : <span><?php echo $fetch_message['number']; ?></span> </p>
       <p> email : <span><?php echo $fetch_message['email']; ?></span> </p>
       <p> message : <span><?php echo $fetch_message['message']; ?></span> </p>
       <a href="admin_contacts.php?delete=<?php echo $fetch_message['id']; ?>" onclick="return confirm('delete this message?');" class="delete-btn">delete message</a>
-   </div>
+   </div> -->
    <?php
       };
    }else{
@@ -65,6 +83,8 @@ if(isset($_GET['delete'])){
    </div>
 
 </section>
+
+
 
 
     <!-- custom admin js file link  -->

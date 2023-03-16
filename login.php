@@ -18,6 +18,8 @@ if(isset($_POST['submit'])){
 
          $_SESSION['admin_name'] = $row['name'];
          $_SESSION['admin_email'] = $row['email'];
+         $_SESSION['admin_age'] = $row['age'];
+         $_SESSION['admin_phone'] = $row['phone'];
          $_SESSION['admin_id'] = $row['id'];
          header('location:admin_page.php');
 
@@ -25,13 +27,15 @@ if(isset($_POST['submit'])){
 
          $_SESSION['user_name'] = $row['name'];
          $_SESSION['user_email'] = $row['email'];
+         $_SESSION['admin_age'] = $row['age'];
+         $_SESSION['admin_phone'] = $row['phone'];
          $_SESSION['user_id'] = $row['id'];
          header('location:home.php');
 
       }
 
    }else{
-      $message[] = 'incorrect email or password!';
+      $message[] = '<i class="fa-solid fa-triangle-exclamation"></i> incorrect email or password';
    }
 
 }

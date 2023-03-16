@@ -5,7 +5,7 @@ include 'config.php';
 if(isset($_POST['submit'])){
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
-   $age = mysqli_real_escape_string($conn, $_POST['age']);
+   $phone = mysqli_real_escape_string($conn, $_POST['phone']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
    $cpass = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $message[] = 'confirm password not matched!';
       }else{
-         mysqli_query($conn, "INSERT INTO `users`(name, age, email, password, user_type) VALUES('$name','$age', '$email', '$cpass', 'user')") or die('query failed');
+         mysqli_query($conn, "INSERT INTO `users`(name, phone, email, password, user_type) VALUES('$name', '$phone', '$email', '$cpass', 'user')") or die('query failed');
          $message[] = 'registered successfully!';
          header('location:login.php');
       }
@@ -66,7 +66,7 @@ if(isset($message)){
    <form action="" method="post">
       <h3>register now</h3>
       <input type="text" name="name" placeholder="enter your name" required class="box">
-      <input type="number" name="age" placeholder="enter your age" required class="box">
+      <input type="text" name="phone" placeholder="enter your phone" required class="box">
       <input type="email" name="email" placeholder="enter your email" required class="box">
       <input type="password" name="password" placeholder="enter your password" required class="box">
       <input type="password" name="cpassword" placeholder="confirm your password" required class="box">

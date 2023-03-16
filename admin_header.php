@@ -31,10 +31,26 @@ if(isset($message)){
       </div>
 
       <div class="account-box">
-         <p>username : <span><?php echo $_SESSION['admin_name']; ?></span></p>
-         <p>email : <span><?php echo $_SESSION['admin_email']; ?></span></p>
+         <div class="banner">
+            <div class="avatar"></div>
+         </div>
+         <h1> <span><?php echo $_SESSION['admin_name']; ?></span></h1>
+         
+         <div class="left">
+            <p><i class="fa-solid fa-envelope"></i></p>
+            <p><i class="fa-solid fa-phone"></i></p>
+         </div>
+         <div class="right">
+            
+            <p> <span><?php echo $_SESSION['admin_email']; ?></span></p>
+            <p>  <span><?php echo $_SESSION['admin_phone']; ?></span></p>
+         </div>
+
+         
+         
          <a href="logout.php" class="delete-btn">logout</a>
       </div>
+      
 
    </div>
 
