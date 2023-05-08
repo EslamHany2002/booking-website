@@ -1,3 +1,6 @@
+/* css for book website */
+/* this css for admin pages */
+/* for website */
 :root{
     --purple:#8e44ad;
     --red:#c0392b;
@@ -147,7 +150,10 @@
       opacity: .2s;
    }
 }
-
+                                                             
+/*                                                             */
+                   /* admin header page */
+/*                                                             */
  .header{
     position: sticky;
     top:0; left:0; right:0;
@@ -274,7 +280,10 @@
       padding-bottom: 50px;
 	}
 
-
+                                                             
+/*                                                             */
+                   /* Dashboard page */
+/*                                                             */
  .dashboard .box-container{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -318,7 +327,10 @@
    color: red;
 }
 
-
+                                                             
+/*                                                             */
+                   /* admin products page */
+/*                                                             */
 
 .add-products form{
    background-color: var(--white);
@@ -347,45 +359,6 @@
    color:var(--black);
    font-size: 1.8rem;
    border:var(--border);
-}
-
-.show-products .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 30rem);
-   justify-content: center;
-   gap:1.5rem;
-   max-width: 1200px;
-   margin:0 auto;
-   align-items: flex-start;
-}
-
-.show-products{
-   padding-top: 0;
-}
-
-.show-products .box-container .box{
-   text-align: center;
-   padding:2rem;
-   border-radius: .5rem;
-   border:var(--border);
-   box-shadow: var(--box-shadow);
-   background-color: var(--white);
-}
-
-.show-products .box-container .box img{
-   height: 30rem;
-}
-
-.show-products .box-container .box .name{
-   padding:1rem 0;
-   font-size: 2rem;
-   color:var(--black);
-}
-
-.show-products .box-container .box .price{
-   padding:1rem 0;
-   font-size: 2.5rem;
-   color:var(--red);
 }
 
 .edit-product-form{
@@ -463,6 +436,8 @@
    background: var(--black);
 }
 
+
+
 .admin-product-form-container.centered{
    display: flex;
    align-items: center;
@@ -497,7 +472,10 @@
    text-transform: none;
 }
 
-/*  */
+                                                             
+/*                                                             */
+                   /* admin orders page */
+/*                                                             */
 
 .orders .box-container{
    display: grid;
@@ -542,7 +520,10 @@
    color:var(--black);
 }
 
-/*  */
+                                                             
+/*                                                             */
+                   /* admin users page */
+/*                                                             */
 
 .users .box-container{
    display: grid;
@@ -577,7 +558,10 @@
    margin-top: 0;
 }
 
-/*  */
+                                                             
+/*                                                             */
+                   /* admin messages page */
+/*                                                             */
 
 .messages .box-container{
    display: grid;
@@ -704,6 +688,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-left: 16px;
+   width: 225px;
 }
 
 .l-card__userInfo span:nth-child(1) {

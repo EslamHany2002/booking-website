@@ -28,14 +28,14 @@
 
       <div class="box">
          <h3>follow us</h3>
-         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="https://www.facebook.com/eslam.hany.5"> <i class="fab fa-facebook-f"></i> facebook </a>
          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+         <a href="https://www.instagram.com/eslamhmr/"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="https://www.linkedin.com/in/eslam-hany/"> <i class="fab fa-linkedin"></i> linkedin </a>
       </div>
 
    </div>
 
-   <p class="credit"> &copy; copyright  @ <?php echo date('Y'); ?> by <span>Eng. Eslam hany & Eslam Hamza</span> </p>
+   <p class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>Eng. Eslam hany & Eslam Hamza</span> </p>
 
 </section>
